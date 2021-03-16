@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACH,YAAY,CAAA,oBAAC;EACb,iBAAiB,CAAA,sBAAC;EAElB,YAAY,CAAA,cAAC;EACb,YAAY,CAAA,iBAAC;EAEb,kBAAkB,CAAA,mBAAC;EAEnB,WAAW,CAAA,oBAAC;EAEZ,eAAe,CAAA,oBAAC;EAChB,aAAa,CAAA,uBAAC;CACf",
+    "sources": [
+        "../sass/utils/variables.scss"
+    ],
+    "names": [],
+    "file": "variables.css"
+}

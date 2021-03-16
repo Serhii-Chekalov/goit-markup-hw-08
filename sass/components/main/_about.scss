@@ -1,0 +1,38 @@
+/* about */
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about__main-title {
+  visibility: hidden;
+}
+
+.about__title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.about__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__text {
+  text-align: left;
+  width: 270px;
+}
+
+.about__icon-wrapt {
+  background-color: rgba(245, 244, 250, 1);
+}
+
+.about__icon {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px 25px 100px;
+}
