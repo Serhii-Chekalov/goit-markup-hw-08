@@ -15,21 +15,75 @@
          <div class="container">
                 <nav class="nav">
                     <a class="nav__logo logo" href="#top">
-                        <span class="logo__text logo__text--blue">Web</span>Studio</a>
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link nav__link--active" href="index.html">Студия</a>
+                        <span class="logo__text logo__text--blue">Web</span>Studio
+                    </a>
+                        
+                    <button type="button" class="menu__button"
+                      aria-expanded="false"
+                      aria-controls="menu-container" data-menu-button>
+                        <svg width="40"
+                        height="40"
+                        aria-label="Переключатель мобильного меню">
+                        <use class="icon__close" href="./images/symbol-defs.svg#close"></use>
+                        <use class="icon__menu" href="./images/symbol-defs.svg#menu"></use>
+                      </svg>
+                    </button>
+
+                    <div class="menu-tablet">
+                      <ul class="menu-tablet__list">
+                        <li class="menu-tablet__item active"><a href="index.html" class="menu-tablet__link">Студия</a></li>
+                        <li class="menu-tablet__item"><a href="portfolio.html" class="menu-tablet__link">Портфолио</a></li>
+                        <li class="menu-tablet__item"><a href="#" class="menu-tablet__link">Контакты</a></li>
+                      </ul>
+
+                      <ul class="menu-tablet__contacts">
+                        <li class="menu-tablet__contacts-item">
+                          <a class="menu-tablet__contacts-link"> 
+                            <svg class="menu-tablet__contacts-ico">
+                              <use href="./images/symbol-defs.svg#smartphone">
+                              </use>
+                            </svg> 
+                            +38 096 111 11 11
+                          </a>
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="portfolio.html">Портфолио</a>
+                        <li class="menu-tablet_contacts-item">
+                          <a class="menu-tablet__contacts-link"> 
+                            <svg class="menu-tablet__contacts-ico">
+                              <use href="./images/symbol-defs.svg#envelope">
+                              </use>
+                            </svg> 
+                            info@devstudio.com
+                          </a>
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="nav__contacts-list contacts-list">
+                      </ul>
+          
+                    </div>
+
+                    <div class="menu__container" id="menu-container" data-menu>
+
+                      <ul class="nav__list">
+                          <li class="nav__item">
+                              <a class="nav__link nav__link--active" href="index.html">Студия</a>
+                          </li>
+                          <li class="nav__item">
+                              <a class="nav__link" href="portfolio.html">Портфолио</a>
+                          </li>
+                          <li class="nav__item">
+                              <a class="nav__link" href="#">Контакты</a>
+                          </li>
+                      </ul>
+
+                      <ul class="nav__contacts-list contacts-list">
                         <li class="contacts-list__item">
-                            <a class="contacts-list__link" href="#"> 
+                          <a class="contacts-list__link contacts-list__link--tel" href="tel:+380961111111">
+                              <svg class="nav__icon--smartphone">
+                                  <use href="./images/symbol-defs.svg#smartphone">
+                                  </use>
+                                </svg> 
+                              +38 096 111 11 11</a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link contacts-list__link--mail" href="#"> 
                                 <svg class="nav__icon--envelope">
                                     <use href="./images/symbol-defs.svg#envelope">
                                     </use>
@@ -38,14 +92,31 @@
                             </a>
                         </li>
                         <li class="contacts-list__item">
-                            <a class="contacts-list__link" href="tel:+380961111111">
-                                <svg class="nav__icon--smartphone">
-                                    <use href="./images/symbol-defs.svg#smartphone">
-                                    </use>
-                                  </svg> 
-                                +38 096 111 11 11</a>
+                          <ul class="nav__contacts-list social-list">
+                            <li class="social-list__item">
+                              <a class="social-list__link"> 
+                                Instagram
+                              </a>
+                            </li>
+                            <li class="social-list__item">
+                              <a class="social-list__link"> 
+                                Twitter
+                              </a>
+                            </li>
+                            <li class="social-list__item">
+                              <a class="social-list__link"> 
+                                Facebook
+                              </a>
+                            </li>
+                            <li class="social-list__item">
+                              <a class="social-list__link"> 
+                                LinkedIn
+                              </a>
+                            </li>
+                          </ul>
                         </li>
                     </ul>
+                  </div>
                 </nav>
            </div>     
     </header>
@@ -201,7 +272,9 @@
             <h2 class="team__main-title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                        <img class="team__img" src="images/img1.jpg" alt="img" width="270" />
+                        <img class="team__img"
+                        srcset="./images/img1-2x.jpg 2x, ./images/img1-3x.jpg 3x" 
+                        src="./images/img1.jpg" alt="img" width="270" />
                         <h3 class="team__title title">Игорь Демьяненко</h3>
                         <p class="team__text text">Product Designer</p>
                         <ul class="team__social social">
@@ -220,15 +293,15 @@
                                     </use>
                                   </svg>
                                 </a>
-                              </li>
-                              <li class="social__item">
+                            </li>
+                            <li class="social__item">
                                 <a class="social__link" href="#">
                                   <svg class="social__icon">
                                     <use href="./images/symbol-defs.svg#facebook" width="20">
                                     </use>
                                   </svg>
                                 </a>
-                              </li>
+                            </li>
                               <li class="social__item">
                                 <a class="social__link" href="#">
                                   <svg class="social__icon">
@@ -240,7 +313,9 @@
                         </ul>
                 </li>
                     <li class="team__item">
-                        <img class="team__img" src="images/img2.jpg" alt="img" width="270" />
+                      <img class="team__img"
+                      srcset="./images/img2-2x.jpg 2x, ./images/img2-3x.jpg 3x" 
+                      src="./images/img2.jpg" alt="img" width="270" />
                         <h3 class="team__title title">Ольга Репина</h3>
                         <p class="team__text text">Frontend Developer</p>
                         <ul class="team__social social">
@@ -279,7 +354,9 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="images/img3.jpg" alt="img" width="270" />
+                      <img class="team__img"
+                        srcset="./images/img3-2x.jpg 2x, ./images/img3-3x.jpg 3x" 
+                        src="./images/img3.jpg" alt="img" width="270" />
                         <h3 class="team__title title">Николай Тарасов</h3>
                         <p class="team__text text">Marketing</p>
                         <ul class="team__social social">
@@ -318,7 +395,9 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="images/img4.jpg" alt="img" width="270" />
+                      <img class="team__img"
+                        srcset="./images/img4-2x.jpg 2x, ./images/img4-3x.jpg 3x" 
+                        src="./images/img4.jpg" alt="img" width="270" />
                         <h3 class="team__title title">Михаил Ермаков</h3>
                         <p class="team__text text">UI Designer</p>
                         <ul class="team__social social">
@@ -432,7 +511,7 @@
         <li class="footer__action action" >
           <h3 class="action__title">присоединяйтесь</h3>
           <ul class="footer__social social">
-            <li class="social__item">
+            <li class="social__item footer__social-item">
               <a class="social__link footer__social-link" href="#">
                 <svg class="social__icon footer__social-icon">
                   <use href="./images/symbol-defs.svg#instagram" width="20">
@@ -440,7 +519,7 @@
                 </svg>
             </a>
             </li>
-            <li class="social__item" >
+            <li class="social__item footer__social-item" >
                 <a class="social__link footer__social-link" href="#">
                   <svg class="social__icon footer__social-icon">
                     <use href="./images/symbol-defs.svg#twitter" width="20">
@@ -448,7 +527,7 @@
                   </svg>
               </a>
               </li>
-              <li class="social__item" >
+              <li class="social__item footer__social-item" >
                 <a class="social__link footer__social-link" href="#">
                   <svg class="social__icon footer__social-icon">
                     <use href="./images/symbol-defs.svg#facebook" width="20">
@@ -456,7 +535,7 @@
                   </svg>
               </a>
               </li>
-              <li class="social__item" >
+              <li class="social__item footer__social-item" >
                 <a class="social__link footer__social-link" href="#">
                   <svg class="social__icon footer__social-icon">
                     <use href="./images/symbol-defs.svg#linkedin" width="20">
@@ -466,7 +545,7 @@
               </li>
          </ul>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--mail">
           <form class="footer__form form">
             <label class="form__title" for="mail">Подпишитесь на рассылку </label>
             <div class="form__mail">
@@ -484,5 +563,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* about */
 .about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about__main-title {
@@ -11,28 +11,48 @@
 .about__title {
   margin-bottom: 10px;
   margin-top: 30px;
+  text-align: center;
 }
 
-.about__item:not(:last-child) {
-  margin-right: 30px;
+// .about__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.about__list {
+  @media screen and (min-width: $tablet){
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.about__list{
-  display: flex;
-  justify-content: space-between;
+.about__item {
+  @media screen and (min-width: $tablet){
+    width: calc((100% / 2) - 30px);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop){
+    width: calc((100% / 4) - 30px);
+    margin: 15px;
+  }
 }
 
 .about__text {
   text-align: left;
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .about__icon-wrapt {
   background-color: rgba(245, 244, 250, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .about__icon {
   width: 70px;
   height: 70px;
-  margin: 25px 100px 25px 100px;
+
 }

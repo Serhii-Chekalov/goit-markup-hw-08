@@ -1,5 +1,8 @@
 /* doing */
 .doing {
+  @media screen and (max-width: $desktop - 1) {
+    display: none;
+  }
   padding-bottom: 94px;
 }
 
@@ -30,14 +33,26 @@
   height: 100%;
 }
 
-.doing__item {
-  position: relative;
-}
-
 .doing__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
 }
+
+.doing__item {
+  position: relative;
+  width: calc((100% / 3) - 30px);
+  margin: 15px;
+}
+
+// .doing__list {
+//   @media screen and (min-width: 768px){
+//     display: flex;
+//     flex-wrap: wrap;
+//     // justify-content: space-between;
+//     margin: -15px;
+//   }
+// }
 
 .doing__overlay {
   position: absolute;

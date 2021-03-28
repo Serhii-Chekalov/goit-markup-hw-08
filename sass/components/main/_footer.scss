@@ -6,8 +6,28 @@
 }
 
 .footer__list{
-  display: flex;
-  justify-content: right;
+  text-align: center;
+  // display: flex;
+  // justify-content: right;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    > *:not(.footer__item--mail) {
+      width: 50%;
+      padding: 0 20px;
+    }
+  }
+  
+  @media screen and (min-width: $desktop) {
+    align-items: flex-start;
+
+    > *:not(.footer__item--mail) {
+      width: calc(55% / 2);
+      padding: 0 20px;
+    }
+  }
 }
 
 .footer__logo {
@@ -21,40 +41,43 @@
 
 .address__text {
   color: $white-text;
+  margin-top: 20px;
 }
   
 
 .address__mail {
-  margin-top: 9px;
+  margin-top: 8px;
   display: block;
 }
 
 .address__tel {
-  margin-top: 9px;
+  margin-top: 8px;
   display: block;
 }
 
-.address__text {
-  margin-top: 20px;
-}
-
-.footer__action{
-  margin-left: 70px;
-}
+// .footer__action{
+//   margin-left: 70px;
+// }
 
 .action__title {
   color: $white-text;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 20px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 20px;
+    text-align: left;
+  }
 }
 
 .footer__link, .footer__icon {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   align-items: center;
   width: inherit;
   height: inherit;
@@ -80,15 +103,15 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  margin-top: 60px;
 }
 
 .footer__form {
-  display: flex;
+  // display: flex;
   flex-direction: column;
-  margin-left: 93px;
+  // margin-left: 93px;
 }
 
 .form__input {
@@ -104,6 +127,8 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .form__btn {
@@ -135,4 +160,20 @@
   top: 13px;
   width: 24px;
   height: 24px;
+}
+
+.footer__social-item {
+  margin-bottom: 60px;
+}
+
+.footer__item {
+  &--mail {
+    padding: 20px;
+    @media screen and (min-width: $tablet) {
+      width: 100%;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 45%;
+    }
+  }
 }
