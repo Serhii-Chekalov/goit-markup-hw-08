@@ -152,6 +152,10 @@
   box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
+  @media screen and (min-width: $desktop){
+    margin-left: 12px;
+    }
 }
 
 .form__icon-end {
@@ -175,5 +179,12 @@
     @media screen and (min-width: $desktop) {
       width: 45%;
     }
+  }
+}
+
+.form__mail {
+  @media screen and (min-width: $desktop){
+  display: inline-flex;
+  align-items: center;
   }
 }

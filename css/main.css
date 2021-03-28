@@ -1002,7 +1002,6 @@ textarea {
 }
 
 .customers__link:hover {
-  border: 1px solid #2196f3;
   color: #2196f3;
 }
 
@@ -1184,6 +1183,12 @@ textarea {
   border: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__btn {
+    margin-left: 12px;
+  }
+}
+
 .form__icon-end {
   position: absolute;
   right: 28px;
@@ -1209,6 +1214,17 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer__item--mail {
     width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__mail {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
