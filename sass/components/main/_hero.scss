@@ -13,14 +13,14 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
     ),
-    url(/images/hero-mobil.jpg);
+    url(../images/hero-mobil.jpg);
   @media screen and (min-width: 768px) {
     background-image: linear-gradient( 
         to right, 
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero-tablet.jpg);
+      url(../images/hero-tablet.jpg);
   }
 
   @media screen and (min-width: 1200px) {
@@ -29,7 +29,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero-desktop.jpg);
+      url(../images/hero-desktop.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -39,7 +39,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
             ),
-        url(/images/hero-desktop2x.jpg);
+        url(../images/hero-desktop2x.jpg);
     }
   }
 }
